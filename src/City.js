@@ -7,7 +7,10 @@ export default function City({ main, weather, name }) {
       <p>
         Temperature: {main.temp}C (Feels like: {main.feels_like}C)
       </p>
-      <img src={`http://openweathermap.org/img/w/${weather[0].icon}.png`} />
+      <img
+        src={`http://openweathermap.org/img/w/${weather[0].icon}.png`}
+        alt="weather icon"
+      />
     </div>
   );
 }
